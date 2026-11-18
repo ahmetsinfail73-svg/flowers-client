@@ -10,7 +10,7 @@ export default function Logo() {
 				src={CONFIG.APP.LOGO.SRC}
 				alt={CONFIG.APP.LOGO.ALT}
 				height={40}
-				width={108}
+				width={158}
 			/>
 		</Link>
 	)

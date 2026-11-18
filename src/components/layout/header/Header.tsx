@@ -15,7 +15,7 @@ export default function Header() {
 	const { HEADER } = CONFIG
 
 	return (
-		<header className='sticky top-0 z-50 border-b bg-background h-header'>
+		<header className='sticky top-0 z-50 border-b bg-background h-header' style={{height: "12vh"}}>
 			<div className='flex-center-between gap-3 cont h-full'>
 				<Logo />
 
