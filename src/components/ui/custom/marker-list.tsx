@@ -13,9 +13,7 @@ export default function MarkerList({ items }: IProps) {
 					className='flex flex-col items-center gap-3 sm:flex-row sm:gap-6'
 				>
 					<span>{item}</span>
-					{index < items.length - 1 && (
-						<Icon name='Dot' className='text-primary' />
-					)}
+
 				</li>
 			))}
 		</ul>

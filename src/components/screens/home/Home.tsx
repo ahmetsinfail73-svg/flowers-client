@@ -29,6 +29,11 @@ export default function Home() {
 
 	return (
 		<main>
+			<div className='bg-accent'>
+				<Section size='sm'>
+					<MarkerList items={HOME.ADVANTAGES} />
+				</Section>
+			</div>
 			<Section>
 				<SectionHeading
 					level={1}
@@ -61,11 +66,7 @@ export default function Home() {
 				</ul>
 			</Section>
 
-			<div className='bg-accent'>
-				<Section size='sm'>
-					<MarkerList items={HOME.ADVANTAGES} />
-				</Section>
-			</div>
+			
 
 			<Section>
 				<div className='flex flex-wrap items-end justify-between gap-6'>
