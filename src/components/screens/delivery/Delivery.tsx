@@ -14,7 +14,6 @@ import {
 	CardTitle,
 } from '@/components/ui/common/card'
 import Icon from '@/components/ui/custom/icon'
-import MarkerList from '@/components/ui/custom/marker-list'
 import Section from '@/components/ui/custom/section'
 import SectionHeading from '@/components/ui/custom/section-heading'
 import { CONFIG } from '@/constants/config.constant'
@@ -25,6 +24,7 @@ export default function Delivery() {
 	const { DELIVERY } = CONFIG
 
 	return (
+        <main>
 			<Section>
 				<SectionHeading
 					TITLE={DELIVERY.WORK.TITLE}
