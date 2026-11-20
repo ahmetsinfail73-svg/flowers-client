@@ -25,51 +25,8 @@ export default function Delivery() {
 	const { DELIVERY } = CONFIG
 
 	return (
-		<main>
-			<Section isTwoColumn>
-				<div className='flex-col-md'>
-					<SectionHeading
-						level={1}
-						SUPER_TITLE={DELIVERY.SUPER_TITLE}
-						TITLE={DELIVERY.TITLE}
-						DESCRIPTION={DELIVERY.DESCRIPTION}
-					/>
-
-					<div className='flex-row-sm'>
-						<Link
-							href={DELIVERY.CATALOG_BUTTON.HREF}
-							className={buttonVariants()}
-						>
-							{DELIVERY.CATALOG_BUTTON.TITLE}
-						</Link>
-
-						<Link
-							href={DELIVERY.ABOUT_BUTTON.HREF}
-							className={buttonVariants({ variant: 'outline' })}
-						>
-							{DELIVERY.ABOUT_BUTTON.TITLE}
-						</Link>
-					</div>
-				</div>
-
-				<Image
-					src={DELIVERY.IMAGE.SRC}
-					alt={DELIVERY.IMAGE.ALT}
-					width={960}
-					height={720}
-					className='image'
-				/>
-			</Section>
-
-			<div className='bg-accent'>
-				<Section size='sm'>
-					<MarkerList items={DELIVERY.ADVANTAGES} />
-				</Section>
-			</div>
-
 			<Section>
 				<SectionHeading
-					SUPER_TITLE={DELIVERY.WORK.SUPER_TITLE}
 					TITLE={DELIVERY.WORK.TITLE}
 				/>
 
@@ -78,7 +35,7 @@ export default function Delivery() {
 						<Card key={TITLE}>
 							<CardHeader>
 								<span className='text-3xl text-primary'>
-									{String(index + 1).padStart(2, '0')}
+									{String(index + 1)}
 								</span>
 							</CardHeader>
 

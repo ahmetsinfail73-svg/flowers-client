@@ -6,8 +6,6 @@ import {
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/common/card'
-import MarkerList from '@/components/ui/custom/marker-list'
-import Quote from '@/components/ui/custom/quote'
 import Section from '@/components/ui/custom/section'
 import SectionHeading from '@/components/ui/custom/section-heading'
 import Text from '@/components/ui/custom/text'
@@ -24,23 +22,10 @@ export default function About() {
 				<div className='flex-col-md'>
 					<SectionHeading
 						level={1}
-						SUPER_TITLE={ABOUT.SUPER_TITLE}
 						TITLE={ABOUT.TITLE}
 						DESCRIPTION={ABOUT.DESCRIPTION}
 					/>
 
-					<div className='flex-row-sm'>
-						<Link href={ABOUT.CATALOG_BUTTON.HREF} className={buttonVariants()}>
-							{ABOUT.CATALOG_BUTTON.TITLE}
-						</Link>
-
-						<Link
-							href={ABOUT.DELIVERY_BUTTON.HREF}
-							className={buttonVariants({ variant: 'outline' })}
-						>
-							{ABOUT.DELIVERY_BUTTON.TITLE}
-						</Link>
-					</div>
 				</div>
 
 				<Image
@@ -50,31 +35,6 @@ export default function About() {
 					height={720}
 					className='image'
 				/>
-			</Section>
-
-			<div className='bg-accent'>
-				<Section size='sm'>
-					<MarkerList items={ABOUT.INFO} />
-				</Section>
-			</div>
-
-			<Section>
-				<SectionHeading
-					TITLE={ABOUT.PLACE.TITLE}
-					SUPER_TITLE={CONFIG.APP.ADDRESS}
-				/>
-
-				<div className='flex-col-md lg:flex-row lg:items-center'>
-					<Image
-						src={ABOUT.PLACE.IMAGE.SRC}
-						alt={ABOUT.PLACE.IMAGE.ALT}
-						width={960}
-						height={720}
-						className='image'
-					/>
-
-					<Text text={ABOUT.PLACE.DESCRIPTION} />
-				</div>
 			</Section>
 
 			<div className='bg-accent'>
@@ -97,7 +57,6 @@ export default function About() {
 
 			<Section>
 				<SectionHeading
-					SUPER_TITLE={ABOUT.REVIEWS.SUPER_TITLE}
 					TITLE={ABOUT.REVIEWS.TITLE}
 				/>
 
@@ -119,7 +78,6 @@ export default function About() {
 			<div className='bg-accent'>
 				<Section>
 					<SectionHeading
-						SUPER_TITLE={ABOUT.SHOP.SUPER_TITLE}
 						TITLE={ABOUT.SHOP.TITLE}
 					/>
 
@@ -143,10 +101,6 @@ export default function About() {
 					</div>
 				</Section>
 			</div>
-
-			<Section>
-				<Quote>{ABOUT.QUOTE}</Quote>
-			</Section>
 
 			<Section>
 				<SectionHeading
